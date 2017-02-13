@@ -5,6 +5,7 @@ describe 'navigate' do
       @user = User.create(email: "test@test.com", password: "asdfasdf", password_confirmation: "asdfasdf", first_name: "John", last_name: "Doe")
       login_as(@user, :scope => :user)
     end
+    
   describe 'index' do 
     before do 
       visit posts_path
@@ -31,7 +32,7 @@ describe 'navigate' do
     end
 
     it 'has a new form that can be reached' do       
-      expect(page.status_code).to eq (200)
+      expect(page.status_code).to eq(200)
     end
 
     it 'can be created from new form page' do 
