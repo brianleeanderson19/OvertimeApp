@@ -18,6 +18,10 @@
   -webkit-border-radius: 3px;
 }
 
+.homepage-block:hover {
+  background-color: #172b63;
+}
+
 .pending-details {
   font-weight: 900;
 }
