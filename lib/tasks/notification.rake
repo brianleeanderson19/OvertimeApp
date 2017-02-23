@@ -12,10 +12,6 @@ namespace :notification do
 
   desc "Sends Mail notification to Managers (admin users) each day to inform of pending overtime requests"
   task manager_email: :environment do
-    # Iterate over the list of pending overtime requests
-    # Check to see if there are any requests
-    # Iterate over the list of admin users/Managers
-    # Send the email
     submitted_posts = Post.submitted
     admin_users = AdminUser.all
 
